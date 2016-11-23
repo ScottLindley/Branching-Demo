@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         mAdapter = new GitStuffAdapter(mActors);
         mRecycler.setLayoutManager(manager);
         mRecycler.setAdapter(mAdapter);
-        mMergeConflictCreator mergeConflictCreator = new MergeConflicCreator(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
+        mMergeConflictCreator = (MergeConflictCreator) findViewById(R.id.recyclerView);
 
 
     }
