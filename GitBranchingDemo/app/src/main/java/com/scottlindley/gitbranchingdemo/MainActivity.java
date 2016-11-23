@@ -1,5 +1,7 @@
 package com.scottlindley.gitbranchingdemo;
 
+import android.graphics.Color;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -8,9 +10,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
-import android.support.v7.app.AppCompatActivity;
-
-import android.support.v7.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private RecyclerView mRecycler;
