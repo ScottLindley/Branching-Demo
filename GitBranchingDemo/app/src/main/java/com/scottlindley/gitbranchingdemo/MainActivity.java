@@ -1,5 +1,7 @@
 package com.scottlindley.gitbranchingdemo;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -8,6 +10,8 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.List;
 import android.support.v7.app.AppCompatActivity;
+
+import static android.support.v7.recyclerview.R.styleable.RecyclerView;
 
 public class MainActivity extends AppCompatActivity {
     private RecyclerView mRecycler;
@@ -27,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         mRecycler.setLayoutManager(manager);
         mRecycler.setAdapter(mAdapter);
 
+
         Actor me = new Actor("Jon", "Yesterday", 2);
         Actor Jay = new Actor("Jay", "Unknown, maybe the late 1700s", 0);
         Actor Scott = new Actor("Scott", "At some point in time", -1);
@@ -34,5 +39,6 @@ public class MainActivity extends AppCompatActivity {
         mActors.add(Jay);
         mActors.add(Scott);
         mAdapter.notifyDataSetChanged();
+
     }
 }
