@@ -1,11 +1,11 @@
 package com.scottlindley.gitbranchingdemo;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import java.util.List;
+import android.support.v7.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private RecyclerView mRecycler;
@@ -22,5 +22,6 @@ public class MainActivity extends AppCompatActivity {
         mAdapter = new GitStuffAdapter(mActors);
         mRecycler.setLayoutManager(manager);
         mRecycler.setAdapter(mAdapter);
+
     }
 }

@@ -18,14 +18,14 @@ public class GitStuffAdapter extends RecyclerView.Adapter<ActorViewHolder> {
 
     @Override
     public ActorViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new ActorViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.actors));
+        return new ActorViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.actors, parent, false));
     }
 
     @Override
     public void onBindViewHolder(ActorViewHolder holder, int position) {
         Actor actor = mActorList.get(position);
         holder.mName.setText(actor.getName());
-        holder.mDob.setText(actor.getDob());
+        holder.mDob.setText(actor.getDOB());
         holder.mOscars.setText(""+actor.getOscarsWon());
     }
 
